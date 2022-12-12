@@ -44,7 +44,7 @@ const updateUser = catchAsync(async (req, res) => {
     updateUserBody,
     req.user.id
   );
-  user.photoPath = config.resetRoute + user.photoPath;
+  user.photoPath = config.rootPath + user.photoPath;
   res.send(user);
 });
 

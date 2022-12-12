@@ -41,6 +41,7 @@ const updateFeature = catchAsync(async (req, res) => {
     req.params.id,
     updateFeatureBody
   );
+  feature.photoPath = `${config.rootPath}${feature.photoPath}`;
   res.send(feature);
 });
 

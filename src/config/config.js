@@ -62,7 +62,7 @@ module.exports = {
   otherMachine: envVars.IMS_OTHER_MACHINE,
   subtratcTimeForUnlock: envVars.TIME_SUBTARCT_FOR_UNLOCK,
   mongoose: {
-    url: envVars.MONGODB_URL + (envVars.NODE_ENV === "test" ? "-test" : ""),
+    url: envVars.MONGODB_URL,
     options: {
       // useCreateIndex: true,
       useNewUrlParser: true,
